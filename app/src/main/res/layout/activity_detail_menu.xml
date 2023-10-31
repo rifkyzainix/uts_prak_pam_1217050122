@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="0dp"
+            android:contentDescription="Foto Toko"
+            android:src="@drawable/detail_pepperoni" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#733F0E"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:gravity="end"
+                android:text="Price: Rp 66.000,00" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#733F0E"
+                android:textStyle="bold"
+                android:textSize="7pt"
+                android:paddingTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Pepperoni pizza adalah pizza yang memiliki  topping daging pepperoni sapi asli. Di Italia, pepperoni disebut salame piccante (salami panas). Biasa menjadi bahan baku pizza di Amerika Serikat, yang sering mewakili 30% pelengkap. Pizza ini cocok untuk santap siang ataupun malam anda" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="0dp"
+                android:textSize="8pt"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#D52F2F"
+                android:text="Order Now" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="0dp"
+                android:textSize="8pt"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#D52F2F"
+                android:text="Back" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="11pt"
+        android:text="Pepperoni Pizza" />
+
+</FrameLayout>

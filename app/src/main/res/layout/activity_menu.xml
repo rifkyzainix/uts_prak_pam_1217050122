@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/menus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/fragment_top_bar" />
+
+            <LinearLayout
+                android:id="@+id/menu_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pepperoni_pizza"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pepperoni_pizza"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pepperoni_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="#733F0E"
+                        android:textSize="9pt"
+                        android:text="Pepperoni Pizza" />
+
+                    <TextView
+                        android:id="@+id/pepperoni_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:textColor="#733F0E"
+                        android:textSize="7pt"
+                        android:text="Cocok bagi anda yang ingin merasakan pizza original dengan taburan keju dan daging asap yang lezat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/spaghetti"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/spaghetti"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spaghetti_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="#733F0E"
+                        android:textSize="9pt"
+                        android:text="Spaghetti" />
+
+                    <TextView
+                        android:id="@+id/spaghetti_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:textColor="#733F0E"
+                        android:textSize="7pt"
+                        android:text="Cocok bagi anda yang ingin merasakan spaghetti original dengan bumbu yang oriental"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/burger"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/burger_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="#733F0E"
+                        android:textSize="9pt"
+                        android:text="Burger" />
+
+                    <TextView
+                        android:id="@+id/burger_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:textColor="#733F0E"
+                        android:textSize="7pt"
+                        android:text="Cocok bagi anda yang ingin merasakan kelembutan burger berlapiskan keju, sayuran dan daging yang tebal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/steak"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/steak"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/steak_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="#733F0E"
+                        android:textSize="9pt"
+                        android:text="Steak" />
+
+                    <TextView
+                        android:id="@+id/steak_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:textColor="#733F0E"
+                        android:textSize="7pt"
+                        android:text="Cocok bagi anda yang ingin merasakan lezatnya daging steak dipadukan dengan kentang yang lezat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#D52F2F"
+        android:src="@drawable/ic_action_plus" />
+</FrameLayout>

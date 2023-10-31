@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".OrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#733F0E"
+            android:textSize="10pt"
+            android:layout_marginBottom="15dp"
+            android:text="Order Detail" />
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:text="Order Detail" />
+
+        <TextView
+            android:id="@+id/order_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:text="Store: Cihampelas" />
+
+        <TextView
+            android:id="@+id/order_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:text="Pepperoni Pizza sudah dipesan" />
+
+        <TextView
+            android:id="@+id/pengiriman_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#733F0E"
+            android:textSize="10pt"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"
+            android:text="Pengiriman" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radio_pirates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambil Sendiri"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_ninjas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fast Delivery (minimal 30 menit sampai)"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0dp"
+            android:layout_marginTop="35dp"
+            android:textSize="8pt"
+            android:backgroundTint="#D52F2F"
+            android:text="Done" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pesan_terima_kasih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:padding="10dp"
+            android:justificationMode="inter_word"
+            android:background="#C4C4C4"
+            android:textStyle="bold"
+            android:text="Terima kasih Pa Asep sudah memesan
+ditoko kami, pesanan Pepperoni Pizza
+anda dikirim menggunakan Fast Delivery " />
+
+    </LinearLayout>
+
+</LinearLayout>

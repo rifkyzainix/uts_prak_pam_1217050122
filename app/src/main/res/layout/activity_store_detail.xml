@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".store_detail">
+
+    <include layout="@layout/fragment_top_bar" />
+
+    <ImageView
+        android:id="@+id/image_toko"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="0dp"
+        android:contentDescription="Foto Toko" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="#733F0E"
+            android:text="Store" />
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:paddingRight="20dp"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="#733F0E"
+            android:text="Cihampelas" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="#733F0E"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/find_on_maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:textColor="#733F0E"
+            android:text="Find on Maps" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/see_menus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="0dp"
+        android:textSize="8pt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D52F2F"
+        android:text="See Menus" />
+
+</LinearLayout>
